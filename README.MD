@@ -1,51 +1,32 @@
-# React-Codelab-Project
+# memopad
+React tutorial(Single-page infinite-scrolling public memo app implemented using React.js, Redux, Express.js and MongoDB) on docker image
+Reference : https://www.inflearn.com
 
-## About
+# Features
+  -Docker container
+  -Authentication (Sign Up / Sign In)
+  -Memo Creation / Manipulation (edit, delete, star)
+  -User Search
 
-React-Codelab-Project is a Single-page infinite-scrolling public memo app implemented using React.js, Redux, Express.js and MongoDB.
+pull ubuntu
+--name memo -p 30000:3000 -it ubuntu /bin/bash
 
-## Features
-- Authentication (Sign Up / Sign In)
-- Memo Creation / Manipulation (edit, delete, star)
-- User Search
+Following technologies are used
+git
+nodejs
+mongodb
+es6
+webpack webpack-dev-server
+babel-cli : form es6 to es5
+nodemon : when amended in dev-env, restart the server
+cross-env : environmental variables
+express : nodejs web framework
+body-parser : for json
+axios : http client
+react-addons-update : immutablility helper (for redux)
+react-router : client-side router
+redux : modern react framework
+style-loader
+css-loader
 
-Preview: https://memo.vlpt.us/
-
-## Following technologies are used
-- axios
-- babel
-- express
-- bcryptjs
-- mongoose
-- react
-- react-router
-- react-addons-css-transition-group
-- react-addons-update
-- redux
-- redux-thunk
-- materializecss
-- react-hot-loader
-- webpack
-- webpack-dev-server
-- style-loader
-- css-loader
-
-
-## Prerequisites
-MongoDB and NodeJS should be installed
-
-```
-npm install -g webpack babel nodemon cross-env
-npm install
-```
-
-## Scripts
-
-- `npm run clean` Deletes Build files of Server and Client
-- `npm run build` Builds Server and Client
-- `npm run start` Start server in production environment
-- `npm run development` Start server in development environment
-
-Express server runs on port 3000, and development server runs on port 4000.
-
-Tutorial on this project (in Korean): https://velopert.com/tag/reactcodelab
+port mapping 30000 to 3000
